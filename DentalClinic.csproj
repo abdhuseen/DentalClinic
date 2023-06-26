@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C1802442-13B2-42F8-A340-3F0328CAC817}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DentalClinic</RootNamespace>
+    <AssemblyName>DentalClinic</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="controller\DB.cs" />
+    <Compile Include="view\CaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\CaseForm.Designer.cs">
+      <DependentUpon>CaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="view\MoneyCheckForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\MoneyCheckForm.Designer.cs">
+      <DependentUpon>MoneyCheckForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\MonthDetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\MonthDetailsForm.Designer.cs">
+      <DependentUpon>MonthDetailsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\OutComeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\OutComeForm.Designer.cs">
+      <DependentUpon>OutComeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\PatientBalanceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\PatientBalanceForm.Designer.cs">
+      <DependentUpon>PatientBalanceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\PatientForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\PatientForm.Designer.cs">
+      <DependentUpon>PatientForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\PatientListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\PatientListForm.Designer.cs">
+      <DependentUpon>PatientListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\PaymentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\PaymentForm.Designer.cs">
+      <DependentUpon>PaymentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\ReadCaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\ReadCaseForm.Designer.cs">
+      <DependentUpon>ReadCaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\TreatmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\TreatmentForm.Designer.cs">
+      <DependentUpon>TreatmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\TreatmentPlanForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\TreatmentPlanForm.Designer.cs">
+      <DependentUpon>TreatmentPlanForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\TreatmentPlanSearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\TreatmentPlanSearchForm.Designer.cs">
+      <DependentUpon>TreatmentPlanSearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\YearDetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\YearDetailsForm.Designer.cs">
+      <DependentUpon>YearDetailsForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="view\CaseForm.resx">
+      <DependentUpon>CaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="view\MoneyCheckForm.resx">
+      <DependentUpon>MoneyCheckForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\MonthDetailsForm.resx">
+      <DependentUpon>MonthDetailsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\OutComeForm.resx">
+      <DependentUpon>OutComeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\PatientBalanceForm.resx">
+      <DependentUpon>PatientBalanceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\PatientForm.resx">
+      <DependentUpon>PatientForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\PatientListForm.resx">
+      <DependentUpon>PatientListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\PaymentForm.resx">
+      <DependentUpon>PaymentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\ReadCaseForm.resx">
+      <DependentUpon>ReadCaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\TreatmentForm.resx">
+      <DependentUpon>TreatmentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\TreatmentPlanForm.resx">
+      <DependentUpon>TreatmentPlanForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\TreatmentPlanSearchForm.resx">
+      <DependentUpon>TreatmentPlanSearchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\YearDetailsForm.resx">
+      <DependentUpon>YearDetailsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
